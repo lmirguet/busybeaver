@@ -1,0 +1,13 @@
+# a sample file for the busy beaver
+# the line A;0;1;RIGHT;B can be read
+# when in state A,if you read 0 then write 1 ; move RIGHT ; go to state B
+A;0;1;LEFT;B
+A;1;1;RIGHT;C
+B;0;1;LEFT;C
+B;1;1;LEFT;B
+C;0;1;LEFT;D
+C;1;0;RIGHT;E
+D;0;1;RIGHT;A
+D;1;1;RIGHT;D
+E;0;1;LEFT;STOP
+E;1;0;RIGHT;A
